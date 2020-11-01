@@ -2,7 +2,10 @@ public class Test
 {
   public static void main(String[] args)
   {
-    Animal animal = AnimalFactory :: createRandomAnimal;
-    animal.voice();
+    AnimalFactory factory = new AnimalFactory();
+    factory.createRandomAnimal().voice();
+    factory.createRandomAnimal().voice();
+    factory.createRandomAnimal().voice();
+    factory.createRandomAnimal().voice();
   }
 }
